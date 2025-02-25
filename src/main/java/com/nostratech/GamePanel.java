@@ -36,9 +36,7 @@ public class GamePanel extends JPanel implements Runnable{
     private void setPieces(){
         for(int i = 0 ; i <=7 ; i++){
             pieces.add(new Pawn(i,1,PieceColor.WHITE));
-        }
-        for(int a = 0 ; a <=7 ; a++){
-            pieces.add(new Pawn(a,6,PieceColor.BLACK));
+            pieces.add(new Pawn(i,6,PieceColor.BLACK));
         }
         pieces.add(new Bishop(2,0,PieceColor.WHITE));
         pieces.add(new Bishop(5,0,PieceColor.WHITE));
